@@ -1,0 +1,158 @@
+header{
+    position: relative;
+    height: 227px;
+}
+header .container{
+    background-color: #F0F0F0;
+    padding: 0;
+}
+.navbar, .search-bar{
+    background-color: #23004B;
+    padding: 0;
+}
+.navbar .navbar-nav-scroll{
+    margin: 0 0 0 300px;
+}
+.navbar .nav-link{
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+.navbar .active .nav-link{
+    background-color: #179EFC;
+    position: relative;
+}
+.navbar .active .nav-link:after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 15px #179EFC;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+#title{
+    color: #95115E;
+    margin: 20px 100px 20px 10px;
+    float: right;
+}
+#title h1{
+    font-size: 3.8rem;
+    text-decoration: underline;
+}
+.list-inline li{
+    float: left;
+    padding: 0 10px;
+}
+
+header div.logo {
+    position: absolute;
+    top: -5px;
+    margin-left: 20px;
+}
+header div.search-bar > ul > li {
+    float: left;
+    padding: 5px 10px;
+}
+header div.search-bar{
+    padding: 8px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+@media (min-width: 1200px){
+    header div.search-bar {
+        max-width: 1140px;
+    }
+}
+/*header div.search-bar::after, header div.search-bar ul{
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+    overflow: hidden;
+}*/
+header .search-bar > ul{
+    float: left; 
+    /*width: 100%;*/
+    margin: 0;
+}
+header .search-bar > ul > li > a > i{
+    font-size: 20px;
+    padding-top: 8px;
+}
+header .search-bar > ul > li > a{
+    width: 36px;
+    height: 36px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+#custom-search-input {
+    margin:0;
+    margin-top: 10px;
+    padding: 0;
+    float: right;
+}
+
+#custom-search-input .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#95115E;
+}
+
+.search-query:focus + button {
+    z-index: 3;   
+}
+
+.footer .container {
+    background: #23004B;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.footer .copyright {
+    line-height: 1.6;
+    color: #a1aab4;
+    font-size: 14px;
+}
+.footer .fa-heart {
+    color: #fb866a;
+}
+
+.footer a {
+    color: #fff;
+}
+.footer .info-box {
+    background: #0098E8;
+    margin: 10px 20px;
+}
