@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
 header{
     position: relative;
     height: 227px;
@@ -39,11 +40,12 @@ header .container{
 
 #title{
     color: #95115E;
-    margin: 20px 100px 20px 10px;
+    margin: 20px 10px 20px 10px;
     float: right;
 }
 #title h1{
-    font-size: 3.8rem;
+    font-family: 'Patua One', cursive;
+    font-size: 4.5rem;
     text-decoration: underline;
 }
 .list-inline li{
