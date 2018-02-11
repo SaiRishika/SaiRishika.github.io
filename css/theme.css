@@ -3,6 +3,9 @@ header{
     position: relative;
     height: 227px;
 }
+body {
+    background-color: #d7e6ef;
+}
 header .container{
     background-color: #F0F0F0;
     padding: 0;
