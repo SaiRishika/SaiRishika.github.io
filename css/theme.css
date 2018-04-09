@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Patua+One');
+@font-face {
+    font-family: "bgothm Bold";
+    src: url("css/fonts/bgothm.ttf");
+    src: 
+    url("css/fonts/bgothm.woff") format("woff"),
+    url("css/fonts/bgothm.otf") format("opentype"),
+    url("css/fonts/bgothm.ttf") format('truetype')
+    url("css/fonts/bgothm.svg#filename") format("svg");
+    }
 header{
     position: relative;
-    height: 227px;
+    height: 210px;
 }
 body {
-    background-color: #d7e6ef;
+    
 }
 header .container{
     background-color: #F0F0F0;
@@ -15,7 +24,7 @@ header .container{
     padding: 0;
 }
 .navbar .navbar-nav-scroll{
-    margin: 0 0 0 300px;
+    margin: 0 0 0 230px;
 }
 .navbar .nav-link{
     color: #fff;
@@ -42,14 +51,15 @@ header .container{
 }
 
 #title{
-    color: #95115E;
+    color: #2760cb;
     margin: 20px 10px 20px 10px;
     float: right;
 }
 #title h1{
-    font-family: 'Patua One', cursive;
-    font-size: 4.5rem;
-    text-decoration: underline;
+    font-family: 'bgothm Bold', cursive;
+    font-size: 4.2rem;
+    font-weight: bolder;
+    border-bottom: 4px solid #000;
 }
 .list-inline li{
     float: left;
@@ -58,7 +68,7 @@ header .container{
 
 header div.logo {
     position: absolute;
-    top: -5px;
+    top: 41px;
     margin-left: 20px;
 }
 header div.search-bar > ul > li {
