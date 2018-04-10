@@ -56,7 +56,7 @@ header .container{
     float: right;
 }
 #title h1{
-    font-family: 'bgothm Bold', cursive;
+    font-family: 'bgothm Bold';
     font-size: 4.2rem;
     font-weight: bolder;
     border-bottom: 4px solid #000;
