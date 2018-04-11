@@ -8,12 +8,63 @@
     url("css/fonts/bgothm.ttf") format('truetype')
     url("css/fonts/bgothm.svg#filename") format("svg");
     }
+@media (min-width: 768px ){
+    #title h1{
+        font-size: 2.4rem;
+    }
+    header div.search-bar{
+        max-width: 720px;
+    }
+    body > header > div > div.logo > a > img,
+    #content > header > div > div.logo > a > img{
+        height: 70px;
+    }
+    header{
+        height: 180px;
+    }
+    .navbar .navbar-nav-scroll {
+        margin: 0 0 0 200px;
+    }
+}
+@media (min-width: 992px){
+    #title h1{
+        font-size: 3.4rem;
+    }
+    header div.search-bar{
+        max-width: 960px;
+    }
+    body > header > div > div.logo > a > img,
+    #content > header > div > div.logo > a > img{
+        height: 90px;
+    }
+    header{
+        height: 200px;
+    }
+    .navbar .navbar-nav-scroll {
+        margin: 0 0 0 230px;
+    }
+}
+@media (min-width: 1200px) {
+    #title h1{
+        font-size: 4.2rem;
+    }
+    header div.search-bar{
+        max-width: 1140px;
+    }
+    body > header > div > div.logo > a > img,
+    #content > header > div > div.logo > a > img{
+        height: 100px;
+    }
+    header{
+        height: 210px;
+    }
+    .navbar .navbar-nav-scroll {
+        margin: 0 0 0 230px;
+    }
+}
+
 header{
     position: relative;
-    height: 210px;
-}
-body {
-    
 }
 header .container{
     background-color: #F0F0F0;
@@ -22,9 +73,6 @@ header .container{
 .navbar, .search-bar{
     background-color: #23004B;
     padding: 0;
-}
-.navbar .navbar-nav-scroll{
-    margin: 0 0 0 230px;
 }
 .navbar .nav-link{
     color: #fff;
@@ -56,42 +104,11 @@ header .container{
     float: right;
 }
 #title h1{
-    font-family: 'bgothm Bold';
-    font-size: 4.2rem;
+    font-family: 'bgothm Bold'; 
     font-weight: bolder;
     border-bottom: 4px solid #000;
 }
-@media (min-width: 992px){
-    #title h1{
-        font-size: 3.4rem;
-    }
-    header div.search-bar{
-        max-width: 960px;
-    }
-    body > header > div > div.logo > a > img,
-    #content > header > div > div.logo > a > img{
-        height: 90px;
-    }
-    header{
-        height: 200px;
-    }
-}
 
-@media (min-width: 768px ) and (max-width: 991px){
-    #title h1{
-        font-size: 2.4rem;
-    }
-    header div.search-bar{
-        max-width: 720px;
-    }
-    body > header > div > div.logo > a > img,
-    #content > header > div > div.logo > a > img{
-        height: 70px;
-    }
-    header{
-        height: 180px;
-    }
-}
 .list-inline li{
     float: left;
     padding: 0 10px;
