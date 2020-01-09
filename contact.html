@@ -146,20 +146,11 @@
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" role="presentation" href="#home">Office</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" role="presentation" href="#Work">Work Shop</a>
-                            </li>
                         </ul>
                         <div class="tab-content">
                             <div id="home" class="container tab-pane active">
                                 <div class="panel-body text-center">
                                     <div id="map1" class="map">
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="Work" class="container tab-pane fade">
-                                <div class="panel-body text-center">
-                                    <div id="map2" class="map">
                                     </div>
                                 </div>
                             </div>
@@ -218,7 +209,7 @@
     <script type="text/javascript">
         jQuery(function ($) {
             function init_map1() {
-                var myLocationOffic = new google.maps.LatLng(17.471834, 78.443497);
+                var myLocationOffic = new google.maps.LatLng(17.516820, 78.460987);
                 var mapOptions = {
                     center: myLocationOffic,
                     zoom: 16
@@ -232,21 +223,7 @@
                 marker.setMap(map);
             }
             init_map1();
-            function init_map2() {
-                var myLocationWorkShop = new google.maps.LatLng(17.527453, 78.447195);
-                var mapOptionsWorkShop = {
-                    center: myLocationWorkShop,
-                    zoom: 16
-                };
-                var markerWorkShop = new google.maps.Marker({
-                    position: myLocationWorkShop,
-                    title: "PropertyWorkShop Location"
-                });
-                var map1 = new google.maps.Map(document.getElementById("map2"),
-                    mapOptionsWorkShop);
-                markerWorkShop.setMap(map1);
-            }
-            init_map2();
+            
         });
     </script>
 </body>
